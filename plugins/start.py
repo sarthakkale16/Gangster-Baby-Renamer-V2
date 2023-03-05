@@ -49,8 +49,8 @@ async def start(client, message):
 	I am file renamer bot, Please sent any telegram**Document Or Video** and enter new filename to rename it"""
         await message.reply_photo(photo=LAZY_PIC,
                                 caption=txt,
-                                reply_markup=InlineKeyboardMarkup(
-                                      [[InlineKeyboardButton("✰ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ✰", url="https://t.me/rb1bots")],
+                                reply_markup=InlineKeyboardMarkup([
+                                      [InlineKeyboardButton("✰ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ✰", url="https://t.me/rb1bots")],
                                       [InlineKeyboardButton("ᴍᴏᴠɪᴇs", url="https://t.me/requestbox1")],
                                       [InlineKeyboardButton("sᴜᴘᴘᴏʀᴛ ᴄʜᴀᴛ ʙᴏᴛ", url='https://t.me/helpsarthak_bot'),
                                       InlineKeyboardButton("ɪɴᴅᴇx", url='https://t.me/rb1index')],
@@ -63,8 +63,8 @@ async def start(client, message):
                 await client.send_message(id, "Your Friend is Already Using Our Bot")
                 await message.reply_photo(photo=LAZY_PIC,
                                          caption=txt,
-                                         reply_markup=InlineKeyboardMarkup(
-                                             [[InlineKeyboardButton("ᴘᴏᴡᴇʀᴇᴅ ʙʏ", url="https://t.me/rb1bots")],
+                                         reply_markup=InlineKeyboardMarkup([
+                                              [InlineKeyboardButton("ᴘᴏᴡᴇʀᴇᴅ ʙʏ", url="https://t.me/rb1bots")],
                                               [InlineKeyboardButton("ᴍᴏᴠɪᴇs", url="https://t.me/requestbox1")],
                                               [InlineKeyboardButton("sᴜᴘᴘᴏʀᴛ ᴄʜᴀᴛ", url='https://t.me/helpsarthak_bot'),
                                              InlineKeyboardButton("ɪɴᴅᴇx", url='https://t.me/rb1index')],
@@ -83,8 +83,8 @@ async def start(client, message):
 	__I am file renamer bot, Please send any telegram 
 	**Document Or Video** and enter new filename to rename it__
 	""", reply_to_message_id=message.id,
-                                     reply_markup=InlineKeyboardMarkup(
-                                         [[InlineKeyboardButton("✘ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ✘", url="https://t.me/rb1bots")],
+                                     reply_markup=InlineKeyboardMarkup([
+                                          [InlineKeyboardButton("✘ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ✘", url="https://t.me/rb1bots")],
                                           [InlineKeyboardButton("ᴍᴏᴠɪᴇs", url="https://t.me/requestbox1")],
                                           [InlineKeyboardButton("sᴜᴘᴘᴏʀᴛ ᴄʜᴀᴛ", url='https://t.me/helpsarthak_bot'),
                                           InlineKeyboardButton("ᴘʀᴇᴍɪᴜᴍ", url='https://t.me/rb1index')],
@@ -125,7 +125,7 @@ async def send_doc(client, message):
         user_type = user_deta["usertype"]
     except:
         await message.reply_text(text=f"Hello dear {message.from_user.first_name}  **we are currently working on this issue**\n\nPlease try to rename files from your another account.\nBecause this BOT can't rename file sent by some ids.\n\nIf you are an **ADMIN** Don't worry ! here we have a solution for you dear {message.from_user.first_name }.\n\nPlease use \n👉 `/addpremium your_other_userid` 👈 to use premium feautres\n\n",
-                                  reply_markup=InlineKeyboardMarkup(
+                                  reply_markup=InlineKeyboardMarkup([
                                                                      [InlineKeyboardButton("ᴘᴏᴡᴇʀᴇᴅ ʙʏ", url='https://telegram.me/rb1bots')],
                                                                      [InlineKeyboardButton("ᴡᴀᴛᴄʜ ᴏᴜᴛ", url='https://t.me/requestbox1')],
                                                                      [InlineKeyboardButton("ᴜᴘᴅᴀᴛᴇs", url='https://t.me/requestbox1official'),
